@@ -1,9 +1,9 @@
 ﻿spring: 
-  profiles:
-    active:
+  profiles: 
+    active: 
     - dev
 ---
-server:
+server: 
   port: 7001
 spring: 
   profiles: test
@@ -19,8 +19,8 @@ eureka:
     service-url:
       #defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/ # 设置与Eureka Server交互的地址查询服务和注册服务
       defaultZone: http://eureka7001.com:7001/eureka/
---
-server:
+---
+server: 
   port: 7001
 spring: 
   profiles: dev
